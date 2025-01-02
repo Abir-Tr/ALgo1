@@ -1,30 +1,15 @@
-/*Instructions
-The length of the sentence (the number of characters).
-The number of words in the sentence (assuming that the words are separated by a single space).
-The number of vowels in the sentence.
-You have to keep in mind that: 
-
-Each character will be treated separately.
-The last character is the point.
-Use three variables as counters.*/
-
-
-
-
-
 ALGORITHM projet1
 VAR
    sentence :STRING :="hello abir are you ready.";
    l:INTEGER :=length(sentence);
   j,i: INTEGER;
-   nbr:INTEGER:=0;
+   nbr,a:INTEGER:=0;
    vowels:STRING:="aueiyo";
    v:INTEGER:=length(vowels);
-   a: INTEGER:=0;
 BEGIN
   Read(sentence);
 FOR i FROM 0 TO l-1 STEP 1  DO
-IF (sentence =" ") THEN
+IF (sentence[i] =" ") THEN
      nbr:=nbr+1;
 END_IF
    END_FOR
